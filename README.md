@@ -70,7 +70,3 @@ Este proyecto es una API RESTful desarrollada con **FastAPI** que utiliza **Llam
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor abre un issue o envía un pull request.
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
