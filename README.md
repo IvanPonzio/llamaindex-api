@@ -1,6 +1,6 @@
 # Proyecto de API con LlamaIndex y Gemini
 
-Este proyecto es una API construida con **FastAPI** que utiliza **LlamaIndex** para indexar documentos y permite realizar consultas sobre ellos utilizando modelos de lenguaje de **Gemini** y **HuggingFace**.
+Este proyecto es una API RESTful desarrollada con **FastAPI** que utiliza **LlamaIndex** para indexar documentos y responder preguntas basadas en ellos.
 
 ## Tabla de Contenidos
 
@@ -13,7 +13,7 @@ Este proyecto es una API construida con **FastAPI** que utiliza **LlamaIndex** p
 
 ## Requisitos
 
-- Python 3.10 o superior
+- Python 3.9 o superior
 - Verifica las dependencias en el archivo `requirements.txt`.
 
 ## Instalación
@@ -36,14 +36,16 @@ Este proyecto es una API construida con **FastAPI** que utiliza **LlamaIndex** p
     pip install -r requirements.txt
     ```
 
+4. Coloca tus archivos `.txt` en el directorio `app/data` para que la API pueda indexarlos.
+
 ## Uso
 
-1. Asegúrate de tener los modelos necesarios en el directorio correcto.
-2. Ejecuta la aplicación:
+1. Ejecuta la aplicación:
     ```bash
     python -m app.main
     ```
-3. La API estará disponible en `http://127.0.0.1:8000/docs`, donde podrás ver la documentación interactiva y probar los endpoints.
+
+2. La API estará disponible en `http://127.0.0.1:8000/docs`, donde podrás ver la documentación interactiva generada automáticamente y probar los endpoints.
 
 ## Endpoints
 
@@ -68,3 +70,7 @@ Este proyecto es una API construida con **FastAPI** que utiliza **LlamaIndex** p
 ## Contribuciones
 
 Las contribuciones son bienvenidas. Si deseas contribuir, por favor abre un issue o envía un pull request.
+
+## Licencia
+
+Este proyecto está bajo la licencia MIT. Para más detalles, consulta el archivo [LICENSE](LICENSE).
