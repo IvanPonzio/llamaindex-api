@@ -16,7 +16,7 @@ Settings.llm_model = llm
 Settings.embed_model = embed_model
 
 # Carga e indexación de documentos en el directorio data/
-data_directory = "./data"
+data_directory = "./app/data"
 documents = SimpleDirectoryReader(data_directory).load_data()  # Cargar documentos .txt desde el directorio
 index = VectorStoreIndex.from_documents(documents)  # Crear índice a partir de los documentos
 query_engine = index.as_query_engine(llm=llm)  # Crear motor de consulta utilizando el LLM
@@ -55,4 +55,4 @@ async def query(q: str):
 import uvicorn
 
 if __name__ == "__main__":
-    uvicorn.run("main:app", host="127.0.0.1", port=8000, reload=True)  # Ejecuta la aplicación
+    uvicorn.run("app.main:app", host="127.0.0.1", port=8000, reload=True)
