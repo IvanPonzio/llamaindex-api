@@ -1,6 +1,6 @@
 # Proyecto de API con LlamaIndex y Gemini
 
-Este proyecto es una API RESTful desarrollada con **FastAPI** que utiliza **LlamaIndex** para indexar documentos y responder preguntas basadas en ellos.
+Este proyecto es una API RESTful desarrollada con FastAPI que utiliza LlamaIndex para indexar documentos y responder preguntas basadas en ellos, apoyándose en el modelo Gemini para mejorar la precisión y calidad de las respuestas.
 
 ## Tabla de Contenidos
 
